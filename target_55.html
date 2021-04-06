@@ -1,0 +1,36 @@
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<style>
+    body {
+        background: #191919;
+    }
+    div {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100px;
+        height: 50px;
+        border-radius: 0 0 200px 200px;
+        transform-origin: top left;
+    }
+    div:nth-child(odd) {
+        background: #f9e492;
+    }
+    div:nth-child(even) {
+        background: #4f77ff;
+    }
+    div:nth-child(1) {
+        transform: rotate(0);
+    }
+    div:nth-child(2) {
+        transform: rotate(90deg);
+    }
+    div:nth-child(3) {
+        transform: rotate(180deg);
+    }
+    div:nth-child(4) {
+        transform: rotate(270deg);
+    }
+</style>

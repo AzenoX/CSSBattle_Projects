@@ -1,0 +1,87 @@
+<div id="face-wrapper">
+    <div id="eyes-wrapper" class="wrapper">
+        <div id="face-left" class="face">
+            <div id="eye-left--wrapper" class="eye-wrapper">
+                <div id="eye-left" class="eye"></div>
+            </div>
+        </div>
+        <div id="face-right" class="face">
+            <div id="eye-right--wrapper" class="eye-wrapper">
+                <div id="eye-right" class="eye"></div>
+            </div>
+        </div>
+    </div>
+    <div id="mouth" class="wrapper"></div>
+</div>
+<style>
+    body{
+        background: #191919;
+        height: 92%;
+    }
+    div#face-wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+    div#eyes-wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    div#eye-left--wrapper,
+    div#eye-right--wrapper{
+        position: relative;
+        border: 12px solid #E08027;
+        border-radius: 50%;
+    }
+    div#eye-left--wrapper{
+        margin-right: -5px;
+    }
+    div#eye-left--wrapper::before{
+        content: '';
+        position: absolute;
+        top: -12px;
+        left: -12px;
+        width: 60px;
+        height: 60px;
+        clip-path: polygon(0 0,100% 0,20% 50%,0 100%);
+        background: #E08027;
+    }
+    div#eye-right--wrapper{
+        margin-left: -5px;
+        box-shadow: 0 0 0 10px #191919;
+    }
+    div#eye-right--wrapper::before{
+        content: '';
+        position: absolute;
+        top: -12px;
+        right: -12px;
+        width: 60px;
+        height: 60px;
+        clip-path: polygon(100% 0,0 0,80% 50%,100% 100%);
+        background: #E08027;
+    }
+    div.eye{
+        width: 30px;
+        height: 30px;
+        position: relative;
+        margin: 1.95em;
+        border-radius: 50%;
+        clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
+        background: radial-gradient(transparent 30%, #E08027 30%);
+        transform: translateY(25%)
+    }
+    div#mouth{
+        display: block;
+        position: relative;
+        z-index: -1;
+        margin-top: -35px;
+        height: 55px;
+        width: 55px;
+        background: #E08027;
+        clip-path: polygon(0 0, 50% 10%, 100% 0, 100% 100%, 0 100%, 10% 50%);
+        transform: rotate(45deg);
+    }
+</style>

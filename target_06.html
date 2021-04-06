@@ -1,0 +1,44 @@
+<div class="row">
+    <div id="d1"></div>
+    <div id="d2"></div>
+</div>
+<div class="row">
+    <div id="d3"></div>
+    <div id="d4"></div>
+</div>
+<style>
+    body{
+        background: #E3516E;
+        height: 100vh;
+        margin: 0;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .row{
+        display: flex;
+        width: 200px;
+    }
+    div {
+        width: 100px;
+        height: 100px;
+    }
+    #d1{
+        border-radius: 100% 0 0 0;
+        background: #51B5A9;
+    }
+    #d2{
+        border-radius: 0 100% 0 0;
+        background: #FADE8B;
+    }
+    #d3{
+        border-radius: 0 0 0 100%;
+        background: #F7F3D7;
+    }
+    #d4{
+        border-radius: 0 0 100% 0;
+        background: transparent;
+    }
+</style>
