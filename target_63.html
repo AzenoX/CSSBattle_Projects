@@ -1,0 +1,48 @@
+<div id="c">
+    <div id="tr" class="e"></div>
+    <div id="tl" class="e"></div>
+    <div id="br" class="e"></div>
+    <div id="bl" class="e"></div>
+</div>
+<style>
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #191919;
+    }
+
+    #c{
+        position: relative;
+        height: 70px;
+        width: 70px;
+        box-shadow: 0 0 0 10px inset #5dbcf9;
+    }
+
+    .e{
+        position: absolute;
+        height: 70px;
+        width: 70px;
+        box-shadow: 0 0 0 10px inset #5dbcf9;
+    }
+    #tr{
+        top: -60px;
+        right: -60px;
+        border-radius: 100% 100% 100% 0;
+    }
+    #tl{
+        top: -60px;
+        right: 60px;
+        border-radius: 100% 100% 0 100%;
+    }
+    #br{
+        bottom: -60px;
+        right: -60px;
+        border-radius: 0 100% 100% 100%;
+    }
+    #bl{
+        bottom: -60px;
+        right: 60px;
+        border-radius: 100% 0 100% 100%;
+    }
+</style>
